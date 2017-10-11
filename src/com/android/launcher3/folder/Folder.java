@@ -279,9 +279,6 @@ public class Folder extends AbstractFloatingView implements DragSource, View.OnC
         Object tag = v.getTag();
         if (tag instanceof ShortcutInfo) {
             ShortcutInfo item = (ShortcutInfo) tag;
-            if (!v.isInTouchMode()) {
-                return false;
-            }
 
             mEmptyCellRank = item.rank;
             mCurrentDragView = v;
